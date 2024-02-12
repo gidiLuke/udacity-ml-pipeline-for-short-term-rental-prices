@@ -6,28 +6,28 @@ entry_points:
     parameters:
 
       input_artifact:
-        description: ## ADD DESCRIPTION
+        description: "Input artifact/data"
         type: string
 
       output_artifact:
-        description: ## ADD DESCRIPTION
+        description: "Output artifact/data"
         type: string
 
       output_type:
-        description: ## ADD DESCRIPTION
+        description: "Output type for WANDB"
         type: string
 
       output_description:
-        description: ## ADD DESCRIPTION
+        description: "Output description for WANDB"
         type: string
 
       min_price:
-        description: ## ADD DESCRIPTION
-        type: string
+        description: "Minimum price for outlier removal"
+        type: float
 
       max_price:
-        description: ## ADD DESCRIPTION
-        type: string
+        description: "Maximum price for outlier removal"
+        type: float
 
 
     command: >-
