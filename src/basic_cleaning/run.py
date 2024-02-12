@@ -13,6 +13,11 @@ logger = logging.getLogger()
 
 
 def go(args) -> None:
+    """Apply basic data cleaning to the input artifact and save the result to a new artifact.
+
+    Args:
+        args: Input args from argparse
+    """
     logger.info("Starting wandb run for basic cleaning.")
     run = wandb.init(job_type="basic_cleaning")
     run.config.update(args)
